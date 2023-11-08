@@ -1,0 +1,557 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		9B1140B187CAB0501CC25B16 /* Pods_AIImageGeneratorApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DE6D472C12D5B8849C5036CA /* Pods_AIImageGeneratorApp.framework */; };
+		B12ADA362AF9143F0081F703 /* OpenAIKit in Frameworks */ = {isa = PBXBuildFile; productRef = B12ADA352AF9143F0081F703 /* OpenAIKit */; };
+		B13624982AF4E1EC00C88052 /* AIImageGeneratorAppApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = B13624972AF4E1EC00C88052 /* AIImageGeneratorAppApp.swift */; };
+		B136249A2AF4E1EC00C88052 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B13624992AF4E1EC00C88052 /* ContentView.swift */; };
+		B136249C2AF4E1EE00C88052 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B136249B2AF4E1EE00C88052 /* Assets.xcassets */; };
+		B136249F2AF4E1EE00C88052 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B136249E2AF4E1EE00C88052 /* Preview Assets.xcassets */; };
+		B13624A82AF4E2FB00C88052 /* Enumerations.swift in Sources */ = {isa = PBXBuildFile; fileRef = B13624A72AF4E2FB00C88052 /* Enumerations.swift */; };
+		B13624AA2AF4E32500C88052 /* ImageStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = B13624A92AF4E32500C88052 /* ImageStyle.swift */; };
+		B13624AE2AF4E4A900C88052 /* ContentViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B13624AD2AF4E4A800C88052 /* ContentViewModel.swift */; };
+		B13624B12AF4E4E200C88052 /* OpenAIKitManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = B13624B02AF4E4E200C88052 /* OpenAIKitManager.swift */; };
+		B13624B72AF4E62200C88052 /* TextEditorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B13624B62AF4E62200C88052 /* TextEditorView.swift */; };
+		B13624B92AF4E66D00C88052 /* StyleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B13624B82AF4E66D00C88052 /* StyleView.swift */; };
+		B13624BB2AF4E6C500C88052 /* ButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B13624BA2AF4E6C500C88052 /* ButtonView.swift */; };
+		B13624BD2AF4E70600C88052 /* LoaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B13624BC2AF4E70600C88052 /* LoaderView.swift */; };
+		B13624BF2AF4E74600C88052 /* StyleListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B13624BE2AF4E74600C88052 /* StyleListView.swift */; };
+		B13624C12AF4E77700C88052 /* ResponseView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B13624C02AF4E77700C88052 /* ResponseView.swift */; };
+		B13624C32AF4E7B700C88052 /* ResultView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B13624C22AF4E7B700C88052 /* ResultView.swift */; };
+		B13624C82AF4FEDE00C88052 /* ResultViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B13624C72AF4FEDE00C88052 /* ResultViewModel.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		2C25524E8288CF02E4690E97 /* Pods-AIImageGeneratorApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AIImageGeneratorApp.debug.xcconfig"; path = "Target Support Files/Pods-AIImageGeneratorApp/Pods-AIImageGeneratorApp.debug.xcconfig"; sourceTree = "<group>"; };
+		67194AD1C3C396952BF9C64B /* Pods-AIImageGeneratorApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AIImageGeneratorApp.release.xcconfig"; path = "Target Support Files/Pods-AIImageGeneratorApp/Pods-AIImageGeneratorApp.release.xcconfig"; sourceTree = "<group>"; };
+		B13624942AF4E1EC00C88052 /* GenArtPro.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GenArtPro.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		B13624972AF4E1EC00C88052 /* AIImageGeneratorAppApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AIImageGeneratorAppApp.swift; sourceTree = "<group>"; };
+		B13624992AF4E1EC00C88052 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		B136249B2AF4E1EE00C88052 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		B136249E2AF4E1EE00C88052 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		B13624A72AF4E2FB00C88052 /* Enumerations.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Enumerations.swift; sourceTree = "<group>"; };
+		B13624A92AF4E32500C88052 /* ImageStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageStyle.swift; sourceTree = "<group>"; };
+		B13624AD2AF4E4A800C88052 /* ContentViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentViewModel.swift; sourceTree = "<group>"; };
+		B13624B02AF4E4E200C88052 /* OpenAIKitManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OpenAIKitManager.swift; sourceTree = "<group>"; };
+		B13624B62AF4E62200C88052 /* TextEditorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextEditorView.swift; sourceTree = "<group>"; };
+		B13624B82AF4E66D00C88052 /* StyleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StyleView.swift; sourceTree = "<group>"; };
+		B13624BA2AF4E6C500C88052 /* ButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonView.swift; sourceTree = "<group>"; };
+		B13624BC2AF4E70600C88052 /* LoaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoaderView.swift; sourceTree = "<group>"; };
+		B13624BE2AF4E74600C88052 /* StyleListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StyleListView.swift; sourceTree = "<group>"; };
+		B13624C02AF4E77700C88052 /* ResponseView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResponseView.swift; sourceTree = "<group>"; };
+		B13624C22AF4E7B700C88052 /* ResultView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultView.swift; sourceTree = "<group>"; };
+		B13624C72AF4FEDE00C88052 /* ResultViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultViewModel.swift; sourceTree = "<group>"; };
+		DE6D472C12D5B8849C5036CA /* Pods_AIImageGeneratorApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AIImageGeneratorApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		B13624912AF4E1EC00C88052 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9B1140B187CAB0501CC25B16 /* Pods_AIImageGeneratorApp.framework in Frameworks */,
+				B12ADA362AF9143F0081F703 /* OpenAIKit in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		B12ADA332AF8C8F50081F703 /* Presentation layer */ = {
+			isa = PBXGroup;
+			children = (
+				B1A40FE02AF8A66400CE31B2 /* Components */,
+				B13624B52AF4E5FD00C88052 /* Views */,
+			);
+			path = "Presentation layer";
+			sourceTree = "<group>";
+		};
+		B136248B2AF4E1EC00C88052 = {
+			isa = PBXGroup;
+			children = (
+				B13624962AF4E1EC00C88052 /* AIImageGeneratorApp */,
+				B13624952AF4E1EC00C88052 /* Products */,
+				FD6838C9BAD15AC98EFAEC62 /* Pods */,
+				E730F965D3B7F4D776B3166F /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		B13624952AF4E1EC00C88052 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				B13624942AF4E1EC00C88052 /* GenArtPro.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		B13624962AF4E1EC00C88052 /* AIImageGeneratorApp */ = {
+			isa = PBXGroup;
+			children = (
+				B13624972AF4E1EC00C88052 /* AIImageGeneratorAppApp.swift */,
+				B12ADA332AF8C8F50081F703 /* Presentation layer */,
+				B13624A62AF4E2D200C88052 /* Business LAyer */,
+				B13624C42AF4E85B00C88052 /* Resources */,
+				B136249D2AF4E1EE00C88052 /* Preview Content */,
+			);
+			path = AIImageGeneratorApp;
+			sourceTree = "<group>";
+		};
+		B136249D2AF4E1EE00C88052 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				B136249E2AF4E1EE00C88052 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		B13624A62AF4E2D200C88052 /* Business LAyer */ = {
+			isa = PBXGroup;
+			children = (
+				B13624A72AF4E2FB00C88052 /* Enumerations.swift */,
+				B13624AF2AF4E4BF00C88052 /* Shared */,
+				B13624AC2AF4E49600C88052 /* ViewModels */,
+				B13624AB2AF4E32800C88052 /* Models */,
+			);
+			path = "Business LAyer";
+			sourceTree = "<group>";
+		};
+		B13624AB2AF4E32800C88052 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				B13624A92AF4E32500C88052 /* ImageStyle.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		B13624AC2AF4E49600C88052 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				B13624AD2AF4E4A800C88052 /* ContentViewModel.swift */,
+				B13624C72AF4FEDE00C88052 /* ResultViewModel.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		B13624AF2AF4E4BF00C88052 /* Shared */ = {
+			isa = PBXGroup;
+			children = (
+				B13624B02AF4E4E200C88052 /* OpenAIKitManager.swift */,
+			);
+			path = Shared;
+			sourceTree = "<group>";
+		};
+		B13624B52AF4E5FD00C88052 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				B13624992AF4E1EC00C88052 /* ContentView.swift */,
+				B13624BC2AF4E70600C88052 /* LoaderView.swift */,
+				B13624BE2AF4E74600C88052 /* StyleListView.swift */,
+				B13624C02AF4E77700C88052 /* ResponseView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		B13624C42AF4E85B00C88052 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				B136249B2AF4E1EE00C88052 /* Assets.xcassets */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		B1A40FE02AF8A66400CE31B2 /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				B13624B62AF4E62200C88052 /* TextEditorView.swift */,
+				B13624B82AF4E66D00C88052 /* StyleView.swift */,
+				B13624BA2AF4E6C500C88052 /* ButtonView.swift */,
+				B13624C22AF4E7B700C88052 /* ResultView.swift */,
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
+		E730F965D3B7F4D776B3166F /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				DE6D472C12D5B8849C5036CA /* Pods_AIImageGeneratorApp.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		FD6838C9BAD15AC98EFAEC62 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				2C25524E8288CF02E4690E97 /* Pods-AIImageGeneratorApp.debug.xcconfig */,
+				67194AD1C3C396952BF9C64B /* Pods-AIImageGeneratorApp.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		B13624932AF4E1EC00C88052 /* AIImageGeneratorApp */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B13624A22AF4E1EE00C88052 /* Build configuration list for PBXNativeTarget "AIImageGeneratorApp" */;
+			buildPhases = (
+				23589E86FF70587BB091EA3C /* [CP] Check Pods Manifest.lock */,
+				B13624A52AF4E28500C88052 /* ShellScript */,
+				B13624902AF4E1EC00C88052 /* Sources */,
+				B13624912AF4E1EC00C88052 /* Frameworks */,
+				B13624922AF4E1EC00C88052 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = AIImageGeneratorApp;
+			packageProductDependencies = (
+				B12ADA352AF9143F0081F703 /* OpenAIKit */,
+			);
+			productName = AIImageGeneratorApp;
+			productReference = B13624942AF4E1EC00C88052 /* GenArtPro.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		B136248C2AF4E1EC00C88052 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1420;
+				LastUpgradeCheck = 1420;
+				TargetAttributes = {
+					B13624932AF4E1EC00C88052 = {
+						CreatedOnToolsVersion = 14.2;
+					};
+				};
+			};
+			buildConfigurationList = B136248F2AF4E1EC00C88052 /* Build configuration list for PBXProject "AIImageGeneratorApp" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = B136248B2AF4E1EC00C88052;
+			packageReferences = (
+				B12ADA342AF9143F0081F703 /* XCRemoteSwiftPackageReference "OpenAIKit" */,
+			);
+			productRefGroup = B13624952AF4E1EC00C88052 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				B13624932AF4E1EC00C88052 /* AIImageGeneratorApp */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		B13624922AF4E1EC00C88052 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B136249F2AF4E1EE00C88052 /* Preview Assets.xcassets in Resources */,
+				B136249C2AF4E1EE00C88052 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		23589E86FF70587BB091EA3C /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-AIImageGeneratorApp-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B13624A52AF4E28500C88052 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Type a script or drag a script file from your workspace to insert its path.\n\"${PODS_ROOT}/SwiftLint/swiftlint\"\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		B13624902AF4E1EC00C88052 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B136249A2AF4E1EC00C88052 /* ContentView.swift in Sources */,
+				B13624C82AF4FEDE00C88052 /* ResultViewModel.swift in Sources */,
+				B13624BF2AF4E74600C88052 /* StyleListView.swift in Sources */,
+				B13624982AF4E1EC00C88052 /* AIImageGeneratorAppApp.swift in Sources */,
+				B13624A82AF4E2FB00C88052 /* Enumerations.swift in Sources */,
+				B13624AA2AF4E32500C88052 /* ImageStyle.swift in Sources */,
+				B13624B12AF4E4E200C88052 /* OpenAIKitManager.swift in Sources */,
+				B13624AE2AF4E4A900C88052 /* ContentViewModel.swift in Sources */,
+				B13624C32AF4E7B700C88052 /* ResultView.swift in Sources */,
+				B13624B92AF4E66D00C88052 /* StyleView.swift in Sources */,
+				B13624BD2AF4E70600C88052 /* LoaderView.swift in Sources */,
+				B13624B72AF4E62200C88052 /* TextEditorView.swift in Sources */,
+				B13624BB2AF4E6C500C88052 /* ButtonView.swift in Sources */,
+				B13624C12AF4E77700C88052 /* ResponseView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		B13624A02AF4E1EE00C88052 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		B13624A12AF4E1EE00C88052 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		B13624A32AF4E1EE00C88052 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2C25524E8288CF02E4690E97 /* Pods-AIImageGeneratorApp.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"AIImageGeneratorApp/Preview Content\"";
+				DEVELOPMENT_TEAM = LPRPC642LQ;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSPhotoLibraryAddUsageDescription = "We need access to your photo library to save photos.";
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.1;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.chicmic.aiImageGeneratorApp;
+				PRODUCT_NAME = GenArtPro;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		B13624A42AF4E1EE00C88052 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 67194AD1C3C396952BF9C64B /* Pods-AIImageGeneratorApp.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"AIImageGeneratorApp/Preview Content\"";
+				DEVELOPMENT_TEAM = LPRPC642LQ;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSPhotoLibraryAddUsageDescription = "We need access to your photo library to save photos.";
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.1;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.chicmic.aiImageGeneratorApp;
+				PRODUCT_NAME = GenArtPro;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		B136248F2AF4E1EC00C88052 /* Build configuration list for PBXProject "AIImageGeneratorApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B13624A02AF4E1EE00C88052 /* Debug */,
+				B13624A12AF4E1EE00C88052 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B13624A22AF4E1EE00C88052 /* Build configuration list for PBXNativeTarget "AIImageGeneratorApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B13624A32AF4E1EE00C88052 /* Debug */,
+				B13624A42AF4E1EE00C88052 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		B12ADA342AF9143F0081F703 /* XCRemoteSwiftPackageReference "OpenAIKit" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/MarcoDotIO/OpenAIKit.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		B12ADA352AF9143F0081F703 /* OpenAIKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = B12ADA342AF9143F0081F703 /* XCRemoteSwiftPackageReference "OpenAIKit" */;
+			productName = OpenAIKit;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = B136248C2AF4E1EC00C88052 /* Project object */;
+}
