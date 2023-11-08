@@ -13,7 +13,7 @@ class OpenAIKitManager {
     
     let openai = OpenAI(Configuration(
         organization: "Personal",
-        apiKey: "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"
+        apiKey: <#YOUR_API_KEY#>
     ))
     
     static let shared = OpenAIKitManager()
