@@ -25,7 +25,7 @@ class FirebaseRemoteConfig {
     // and so that default values are available if none are set in the backend.
     // Define a set of parameter names, and default parameter values using an NSDictionary object or a plist file.
     func setupRemoteConfigDefaults() {
-        let defaultValue = [FirebaseKeys.apiKey: "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" as NSObject]
+        let defaultValue = [FirebaseKeys.apiKey: <#Your_api_key#> as NSObject]
         remoteConfig.setDefaults(defaultValue)
         OpenAIKitManager.shared.setup()
 
