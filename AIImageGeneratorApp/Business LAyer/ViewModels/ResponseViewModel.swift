@@ -1,40 +1,36 @@
 //
-//  ResultViewModel.swift
+//  ResponseViewModel.swift
 //  AIImageGeneratorApp
 //
-//  Created by Saheem Hussain on 03/11/23.
+//  Created by Saheem Hussain on 09/11/23.
 //
 
 import Foundation
 import SwiftUI
 
-class ResultViewModel: NSObject, ObservableObject {
+class ResponseViewModel: NSObject, ObservableObject {
  
-    @Published var isSaving = false
-    
-    var imageArray: [UIImage] = []
-    var imageSaved = false
+    @Published var presenAlert = false
+    @Published var message = String()
     
     func saveImage(image: UIImage) {
-        // Show loader
-        isSaving = true
         
         UIImageWriteToSavedPhotosAlbum(image, self, #selector(image(_:didFinishSavingWithError:contextInfo:)), nil)
     }
     
     @objc func image(_ image: UIImage, didFinishSavingWithError error: NSError?, contextInfo: UnsafeRawPointer) {
-        // Hide loader on the main thread
         DispatchQueue.main.async {
-            self.isSaving = false
 
             if let error = error {
                 // Handle the error
                 print("Error saving image: \(error.localizedDescription)")
+                self.message = AppConstants.errorSaving
             } else {
-                // Image saved successfully
-//                imageSaved = true
                 print("Image saved to photo album")
+                self.message = AppConstants.imageSaved
             }
+            
+            self.presenAlert = true
         }
     }
 }

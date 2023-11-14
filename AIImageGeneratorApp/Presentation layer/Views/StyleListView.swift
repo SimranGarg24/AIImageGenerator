@@ -11,29 +11,16 @@ struct StyleListView: View {
     @Environment (\.dismiss) var dismiss
     @ObservedObject var viewModel: ContentViewModel
     
-    var columns: [GridItem] = [
-        GridItem(.adaptive(minimum: 100)),
-        GridItem(.adaptive(minimum: 100)),
-        GridItem(.adaptive(minimum: 100))
-    ]
-    
     var body: some View {
         
         VStack {
             
-            HStack(alignment: .bottom) {
-
-                Text("Select Style")
-                    .bold()
-
-            }
-            .padding(.vertical)
-            .padding(.top)
-            
-            Divider()
+            HeaderView(title: AppConstants.selectStyle)
+                .padding(.vertical)
+                .padding(.top)
             
             ScrollView(showsIndicators: false) {
-                LazyVGrid(columns: columns, spacing: 16) {
+                LazyVGrid(columns: viewModel.columns, spacing: 16) {
                     ForEach(ImageStyle.data, id: \.style) { data in
                         
                         Button {

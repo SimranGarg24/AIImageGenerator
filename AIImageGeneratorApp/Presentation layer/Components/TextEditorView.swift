@@ -12,20 +12,38 @@ struct TextEditorView: View {
     var title: String
     var textLimit: Int
     @Binding var text: String
+//    @Binding var showToast: Bool
+    @FocusState var isFocus: Bool
     
     var body: some View {
         
         VStack {
             
-            TextField(title, text: $text, axis: .vertical)
-                .tint(.purple)
-                .padding(.bottom, 20)
-                .onChange(of: text) { _ in
-                    if text.count > textLimit {
-                        text = String(text.prefix(textLimit))
+            ZStack(alignment: .topLeading) {
+                
+                TextEditor(text: $text)
+                .toolbar {
+                    ToolbarItemGroup(placement: .keyboard) {
+                        Spacer()
+                        
+                        Button(ButtonLabels.done) {
+                            self.hideKeyboard()
+                        }
                     }
                 }
-            
+                .focused($isFocus)
+                .padding([.top, .leading, .trailing], 8)
+                
+                if text.isEmpty {
+                    Text(AppConstants.placeholder)
+                        .foregroundColor(.gray)
+                        .padding(.horizontal, 12)
+                        .padding(.top, 15)
+                        .onTapGesture {
+                            isFocus = true
+                        }
+                }
+            }
             HStack {
                 
                 Spacer()
@@ -33,30 +51,29 @@ struct TextEditorView: View {
                 if !text.isEmpty {
                     Text("\(text.count) / \(textLimit)")
                         .font(.system(size: 14))
-                        .foregroundColor(.gray)
+                        .foregroundColor(text.count > textLimit ? .red : .gray)
                     
                     Button {
                         text = String()
                     } label: {
-                        Image(systemName: "multiply.circle.fill")
+                        Image(systemName: AppImages.cross)
                             .symbolRenderingMode(.palette)
                             .foregroundStyle(.black, .gray.opacity(0.3))
                             .font(.system(size: 26))
                     }
                 }
             }
+            .padding([.trailing, .bottom])
         }
-        .padding()
         .overlay(
             RoundedRectangle(cornerRadius: 12)
-                .stroke(Color.purple, lineWidth: 1)
+                .stroke(AppColor.grayBorderColor, lineWidth: 1)
         )
-        .padding(.horizontal, 1)
     }
 }
 
 struct TextEditorView_Previews: PreviewProvider {
     static var previews: some View {
-        TextEditorView(title: "Type Something..", textLimit: 200, text: Binding.constant(String()))
+        TextEditorView(title: AppConstants.placeholder, textLimit: 1000, text: Binding.constant(String()))
     }
 }

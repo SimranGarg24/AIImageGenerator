@@ -23,8 +23,13 @@
 		B13624BD2AF4E70600C88052 /* LoaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B13624BC2AF4E70600C88052 /* LoaderView.swift */; };
 		B13624BF2AF4E74600C88052 /* StyleListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B13624BE2AF4E74600C88052 /* StyleListView.swift */; };
 		B13624C12AF4E77700C88052 /* ResponseView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B13624C02AF4E77700C88052 /* ResponseView.swift */; };
-		B13624C32AF4E7B700C88052 /* ResultView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B13624C22AF4E7B700C88052 /* ResultView.swift */; };
-		B13624C82AF4FEDE00C88052 /* ResultViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B13624C72AF4FEDE00C88052 /* ResultViewModel.swift */; };
+		B174B4452AFDF05700ED0EA1 /* FirebaseRemoteConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = B174B4442AFDF05700ED0EA1 /* FirebaseRemoteConfig.swift */; };
+		B17CD4BE2AFCD67D00E0A8D3 /* HeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B17CD4BD2AFCD67D00E0A8D3 /* HeaderView.swift */; };
+		B17CD4C02AFCD8B500E0A8D3 /* AppConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = B17CD4BF2AFCD8B500E0A8D3 /* AppConstants.swift */; };
+		B17CD4C42AFD098500E0A8D3 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = B17CD4C32AFD098500E0A8D3 /* GoogleService-Info.plist */; };
+		B17CD4C62AFD099D00E0A8D3 /* Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = B17CD4C52AFD099D00E0A8D3 /* Extension.swift */; };
+		B17CD4C82AFD19AF00E0A8D3 /* ResponseViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B17CD4C72AFD19AF00E0A8D3 /* ResponseViewModel.swift */; };
+		B17CD4CA2AFD1D5000E0A8D3 /* PhotoButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B17CD4C92AFD1D5000E0A8D3 /* PhotoButtonView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -45,8 +50,14 @@
 		B13624BC2AF4E70600C88052 /* LoaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoaderView.swift; sourceTree = "<group>"; };
 		B13624BE2AF4E74600C88052 /* StyleListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StyleListView.swift; sourceTree = "<group>"; };
 		B13624C02AF4E77700C88052 /* ResponseView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResponseView.swift; sourceTree = "<group>"; };
-		B13624C22AF4E7B700C88052 /* ResultView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultView.swift; sourceTree = "<group>"; };
-		B13624C72AF4FEDE00C88052 /* ResultViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultViewModel.swift; sourceTree = "<group>"; };
+		B174B4442AFDF05700ED0EA1 /* FirebaseRemoteConfig.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirebaseRemoteConfig.swift; sourceTree = "<group>"; };
+		B17CD4BD2AFCD67D00E0A8D3 /* HeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeaderView.swift; sourceTree = "<group>"; };
+		B17CD4BF2AFCD8B500E0A8D3 /* AppConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppConstants.swift; sourceTree = "<group>"; };
+		B17CD4C22AFD03D000E0A8D3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B17CD4C32AFD098500E0A8D3 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		B17CD4C52AFD099D00E0A8D3 /* Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extension.swift; sourceTree = "<group>"; };
+		B17CD4C72AFD19AF00E0A8D3 /* ResponseViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResponseViewModel.swift; sourceTree = "<group>"; };
+		B17CD4C92AFD1D5000E0A8D3 /* PhotoButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoButtonView.swift; sourceTree = "<group>"; };
 		DE6D472C12D5B8849C5036CA /* Pods_AIImageGeneratorApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AIImageGeneratorApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -93,6 +104,8 @@
 		B13624962AF4E1EC00C88052 /* AIImageGeneratorApp */ = {
 			isa = PBXGroup;
 			children = (
+				B17CD4C22AFD03D000E0A8D3 /* Info.plist */,
+				B17CD4C32AFD098500E0A8D3 /* GoogleService-Info.plist */,
 				B13624972AF4E1EC00C88052 /* AIImageGeneratorAppApp.swift */,
 				B12ADA332AF8C8F50081F703 /* Presentation layer */,
 				B13624A62AF4E2D200C88052 /* Business LAyer */,
@@ -113,7 +126,7 @@
 		B13624A62AF4E2D200C88052 /* Business LAyer */ = {
 			isa = PBXGroup;
 			children = (
-				B13624A72AF4E2FB00C88052 /* Enumerations.swift */,
+				B17CD4C12AFCD8BF00E0A8D3 /* Utility */,
 				B13624AF2AF4E4BF00C88052 /* Shared */,
 				B13624AC2AF4E49600C88052 /* ViewModels */,
 				B13624AB2AF4E32800C88052 /* Models */,
@@ -133,7 +146,7 @@
 			isa = PBXGroup;
 			children = (
 				B13624AD2AF4E4A800C88052 /* ContentViewModel.swift */,
-				B13624C72AF4FEDE00C88052 /* ResultViewModel.swift */,
+				B17CD4C72AFD19AF00E0A8D3 /* ResponseViewModel.swift */,
 			);
 			path = ViewModels;
 			sourceTree = "<group>";
@@ -142,6 +155,7 @@
 			isa = PBXGroup;
 			children = (
 				B13624B02AF4E4E200C88052 /* OpenAIKitManager.swift */,
+				B174B4442AFDF05700ED0EA1 /* FirebaseRemoteConfig.swift */,
 			);
 			path = Shared;
 			sourceTree = "<group>";
@@ -165,13 +179,24 @@
 			path = Resources;
 			sourceTree = "<group>";
 		};
+		B17CD4C12AFCD8BF00E0A8D3 /* Utility */ = {
+			isa = PBXGroup;
+			children = (
+				B13624A72AF4E2FB00C88052 /* Enumerations.swift */,
+				B17CD4BF2AFCD8B500E0A8D3 /* AppConstants.swift */,
+				B17CD4C52AFD099D00E0A8D3 /* Extension.swift */,
+			);
+			path = Utility;
+			sourceTree = "<group>";
+		};
 		B1A40FE02AF8A66400CE31B2 /* Components */ = {
 			isa = PBXGroup;
 			children = (
+				B17CD4BD2AFCD67D00E0A8D3 /* HeaderView.swift */,
 				B13624B62AF4E62200C88052 /* TextEditorView.swift */,
 				B13624B82AF4E66D00C88052 /* StyleView.swift */,
 				B13624BA2AF4E6C500C88052 /* ButtonView.swift */,
-				B13624C22AF4E7B700C88052 /* ResultView.swift */,
+				B17CD4C92AFD1D5000E0A8D3 /* PhotoButtonView.swift */,
 			);
 			path = Components;
 			sourceTree = "<group>";
@@ -205,6 +230,7 @@
 				B13624902AF4E1EC00C88052 /* Sources */,
 				B13624912AF4E1EC00C88052 /* Frameworks */,
 				B13624922AF4E1EC00C88052 /* Resources */,
+				2A135DC8E1089097D121A9B1 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -261,6 +287,7 @@
 			files = (
 				B136249F2AF4E1EE00C88052 /* Preview Assets.xcassets in Resources */,
 				B136249C2AF4E1EE00C88052 /* Assets.xcassets in Resources */,
+				B17CD4C42AFD098500E0A8D3 /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -289,6 +316,23 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
+		2A135DC8E1089097D121A9B1 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-AIImageGeneratorApp/Pods-AIImageGeneratorApp-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-AIImageGeneratorApp/Pods-AIImageGeneratorApp-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-AIImageGeneratorApp/Pods-AIImageGeneratorApp-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 		B13624A52AF4E28500C88052 /* ShellScript */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -313,18 +357,22 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B174B4452AFDF05700ED0EA1 /* FirebaseRemoteConfig.swift in Sources */,
 				B136249A2AF4E1EC00C88052 /* ContentView.swift in Sources */,
-				B13624C82AF4FEDE00C88052 /* ResultViewModel.swift in Sources */,
 				B13624BF2AF4E74600C88052 /* StyleListView.swift in Sources */,
 				B13624982AF4E1EC00C88052 /* AIImageGeneratorAppApp.swift in Sources */,
 				B13624A82AF4E2FB00C88052 /* Enumerations.swift in Sources */,
 				B13624AA2AF4E32500C88052 /* ImageStyle.swift in Sources */,
 				B13624B12AF4E4E200C88052 /* OpenAIKitManager.swift in Sources */,
 				B13624AE2AF4E4A900C88052 /* ContentViewModel.swift in Sources */,
-				B13624C32AF4E7B700C88052 /* ResultView.swift in Sources */,
 				B13624B92AF4E66D00C88052 /* StyleView.swift in Sources */,
+				B17CD4C62AFD099D00E0A8D3 /* Extension.swift in Sources */,
+				B17CD4BE2AFCD67D00E0A8D3 /* HeaderView.swift in Sources */,
+				B17CD4CA2AFD1D5000E0A8D3 /* PhotoButtonView.swift in Sources */,
+				B17CD4C02AFCD8B500E0A8D3 /* AppConstants.swift in Sources */,
 				B13624BD2AF4E70600C88052 /* LoaderView.swift in Sources */,
 				B13624B72AF4E62200C88052 /* TextEditorView.swift in Sources */,
+				B17CD4C82AFD19AF00E0A8D3 /* ResponseViewModel.swift in Sources */,
 				B13624BB2AF4E6C500C88052 /* ButtonView.swift in Sources */,
 				B13624C12AF4E77700C88052 /* ResponseView.swift in Sources */,
 			);
@@ -454,17 +502,17 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
+				CURRENT_PROJECT_VERSION = 3;
 				DEVELOPMENT_ASSET_PATHS = "\"AIImageGeneratorApp/Preview Content\"";
 				DEVELOPMENT_TEAM = LPRPC642LQ;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = AIImageGeneratorApp/Info.plist;
 				INFOPLIST_KEY_NSPhotoLibraryAddUsageDescription = "We need access to your photo library to save photos.";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
-				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UIUserInterfaceStyle = Light;
 				IPHONEOS_DEPLOYMENT_TARGET = 16.1;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -473,9 +521,12 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.chicmic.aiImageGeneratorApp;
 				PRODUCT_NAME = GenArtPro;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -486,17 +537,17 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
+				CURRENT_PROJECT_VERSION = 3;
 				DEVELOPMENT_ASSET_PATHS = "\"AIImageGeneratorApp/Preview Content\"";
 				DEVELOPMENT_TEAM = LPRPC642LQ;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = AIImageGeneratorApp/Info.plist;
 				INFOPLIST_KEY_NSPhotoLibraryAddUsageDescription = "We need access to your photo library to save photos.";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
-				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UIUserInterfaceStyle = Light;
 				IPHONEOS_DEPLOYMENT_TARGET = 16.1;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -505,9 +556,12 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.chicmic.aiImageGeneratorApp;
 				PRODUCT_NAME = GenArtPro;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};

@@ -7,4 +7,5 @@ target 'AIImageGeneratorApp' do
 
   # Pods for AIImageGeneratorApp
   pod 'SwiftLint'
+  pod 'Firebase/RemoteConfig'
 end

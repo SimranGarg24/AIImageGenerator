@@ -13,7 +13,7 @@ struct LoaderView: View {
             
             HStack {
                 ProgressView()
-                    .progressViewStyle(CircularProgressViewStyle(tint: .purple))
+                    .progressViewStyle(CircularProgressViewStyle(tint: AppColor.orangeColor))
                     .scaleEffect(2)
             }
             .padding(32)

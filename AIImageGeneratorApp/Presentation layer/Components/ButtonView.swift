@@ -12,22 +12,24 @@ struct ButtonView: View {
     var action: () -> Void
     
     var body: some View {
+        
         Button {
             action()
         } label: {
             Text(title)
-                .font(.headline)
+                .font(.system(size: 18))
                 .foregroundColor(.white)
-                .padding()
-                .frame(maxWidth: .infinity)
+                .padding(.vertical)
         }
-        .background(Color.purple)
-        .cornerRadius(12)
+        .frame(maxWidth: .infinity)
+        .background(AppColor.orangeColor)
+        .cornerRadius(10)
+        
     }
 }
 
 struct ButtonView_Previews: PreviewProvider {
     static var previews: some View {
-        ButtonView(title: "Generate", action: {})
+        ButtonView(title: ButtonLabels.generate, action: {})
     }
 }

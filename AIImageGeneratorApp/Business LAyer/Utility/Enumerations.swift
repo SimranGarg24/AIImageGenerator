@@ -8,7 +8,7 @@
 import Foundation
 
 enum Style: String {
-    case noStyle = "No Style"
+    case noStyle = ""
     case oilPaint = "Oil painting"
     case waterColor = "Water color"
     case sketch = "Sketch"
